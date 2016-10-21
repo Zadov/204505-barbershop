@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+	<meta charset="utf-8">
+	<link rel="stylesheet" href="css/style.css">
+	<title>HTML Academy: Барбершоп | Каталог</title>
+</head>
+<body>
+
+	<!-- Шапка сайта -->
+
+	<header class="main_header">
+		<div class="container">
+			<a class="logo_menu" href="index.html">
+				<img src="img/logo_small.png" alt="Barbershop" width="111" height="24">
+			</a>
+			<nav class="main_navigaition">
+				<ul>
+					<li><a href="#">Информация</a></li>
+					<li><a href="#">Новости</a></li>
+					<li><a href="#">Прайс-лист</a></li>
+					<li><a href="#">Магазин</a></li>
+					<li><a href="#">Контакты</a></li>
+				</ul>
+			</nav>
+			<div class="user_block">
+				<a class="login" href="#">Вход</a>
+			</div>
+		</div>
+	</header>
+
+	<!-- Основное содержание -->
+
+	<main class="container">
+		<!-- Заголовок и доп. меню -->
+		<h1>Средства для ухода</h1>
+		<nav class="breadcrumbs">
+			<ul>
+				<li><a href="index.html">Главная</a></li>
+				<li><a href="catalog.html">Магазин</a></li>
+				<li>Средства для ухода</li>
+			</ul>
+		</nav>
+		<!-- Блок с фильтрами и товарами -->
+		<div class="goods">
+			<!-- Блок фильтров -->
+			<form action="https://echo.htmlacademy.ru" method="get">
+				<h2>Производители:</h2>
+				<label><input type="checkbox">Baxter of California</label>
+				<label><input type="checkbox">Mr Natty</label>
+				<label><input type="checkbox">Suavecito</label>
+				<label><input type="checkbox">Malin+Goetz</label>
+				<label><input type="checkbox">Murray’s</label>
+				<label><input type="checkbox">American Crew</label>
+				<h2>Группы товаров:</h2>
+				<label><input type="radio">Бритвенные принадлежности</label>
+				<label><input type="radio">Средства для ухода</label>
+				<label><input type="radio">Аксессуары</label>
+				<button>Показать</button>
+			</form>
+			<!-- Блок с товарами -->
+			<div class="goods">
+				<article class="good_block"></article>
+				<article class="good_block"></article>
+				<article class="good_block"></article>
+				<article class="good_block"></article>
+				<article class="good_block"></article>
+				<article class="good_block"></article>
+			</div>
+		
+		</div>
+	</main>
+
+	<!-- Подвал сайта -->
+
+	<footer class="main_footer">
+		<div class="container">
+			<section class="footer_contacts">
+				Барбершоп «Бородинский»<br>
+				Адрес: г. Санкт-Петербург, Б. Конюшенная, д. 19/8<br>
+				<a href="#">Как нас найти?</a><br>
+				Телефон: +7 (812) 666-02-66
+			</section>
+			<section class="footer_social">
+				<p>Давайте дружить!</p>
+				<a href="#" class="social_btn social_btn_vk">Вконтакте</a>
+				<a href="#" class="social_btn social_btn_fb">Фейсбук</a>
+				<a href="#" class="social_btn social_btn_inst">Инстаграм</a>
+			</section>
+			<section class="footer_copyright">
+				<p>Разработано:</p>
+				<a href="https://htmlacademy.ru" class="btn">HTML Academy</a>
+			</section>
+		</div>
+	</footer>
+
+</body>
+</html>
