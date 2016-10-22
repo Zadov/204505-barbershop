@@ -18,8 +18,8 @@
 				<ul>
 					<li><a href="#">Информация</a></li>
 					<li><a href="#">Новости</a></li>
-					<li><a href="#">Прайс-лист</a></li>
-					<li><a href="#">Магазин</a></li>
+					<li><a href="price.html">Прайс-лист</a></li>
+					<li><a href="catalog.html">Магазин</a></li>
 					<li><a href="#">Контакты</a></li>
 				</ul>
 			</nav>
@@ -41,31 +41,80 @@
 				<li>Средства для ухода</li>
 			</ul>
 		</nav>
-		<!-- Блок с фильтрами и товарами -->
+		<!-- Блок с фильтрами и каталогом товаров -->
 		<div class="goods">
 			<!-- Блок фильтров -->
-			<form action="https://echo.htmlacademy.ru" method="get">
+			<form class="goods_filter" action="http://echo.htmlacademy.ru" method="get">
 				<h2>Производители:</h2>
-				<label><input type="checkbox">Baxter of California</label>
-				<label><input type="checkbox">Mr Natty</label>
-				<label><input type="checkbox">Suavecito</label>
-				<label><input type="checkbox">Malin+Goetz</label>
-				<label><input type="checkbox">Murray’s</label>
-				<label><input type="checkbox">American Crew</label>
+				<label><input name="baxter" type="checkbox">Baxter of California</label>
+				<label><input name="natty" type="checkbox">Mr Natty</label>
+				<label><input name="suavecito" type="checkbox">Suavecito</label>
+				<label><input name="malin_goetz" type="checkbox">Malin+Goetz</label>
+				<label><input name="murray" type="checkbox">Murray’s</label>
+				<label><input name="crew" type="checkbox">American Crew</label>
 				<h2>Группы товаров:</h2>
-				<label><input type="radio">Бритвенные принадлежности</label>
-				<label><input type="radio">Средства для ухода</label>
-				<label><input type="radio">Аксессуары</label>
+				<label><input name="radio_groups" type="radio" value="shave">Бритвенные принадлежности</label>
+				<label><input name="radio_groups" type="radio" value="care">Средства для ухода</label>
+				<label><input name="radio_groups" type="radio" value="accessories">Аксессуары</label>
 				<button>Показать</button>
 			</form>
-			<!-- Блок с товарами -->
-			<div class="goods">
-				<article class="good_block"></article>
-				<article class="good_block"></article>
-				<article class="good_block"></article>
-				<article class="good_block"></article>
-				<article class="good_block"></article>
-				<article class="good_block"></article>
+			<!-- Блок с каталогом товаров -->
+			<div class="goods_catalog">
+				<article class="good_block">
+					<figure>
+						<img src="img/travel.png" alt="Набор для путешествий «Baxter of California»" width="220" height="165">
+						<figcaption>Набор для путешествий<br>«Baxter of California»</figcaption>
+					</figure>
+					<span class="good_cost">2 900 руб.</span>
+					<a class="good_buy" href="catalog_item.html">Купить</a>
+				</article>
+				<article class="good_block">
+					<figure>
+						<img src="img/condition.png" alt="Увлажняющий кондиционер «Baxter of California»" width="220" height="165">
+						<figcaption>Увлажняющий кондиционер<br>«Baxter of California»</figcaption>
+					</figure>
+					<span class="good_cost">750 руб.</span>
+					<a class="good_buy" href="#">Купить</a>
+				</article>
+				<article class="good_block">
+					<figure>
+						<img src="img/hair.png" alt="Гель для волос «SUAVECITO»" width="220" height="165">
+						<figcaption>Гель для волос<br>«SUAVECITO»</figcaption>
+					</figure>
+					<span class="good_cost">290 руб.</span>
+					<a class="good_buy" href="#">Купить</a>
+				</article>
+				<article class="good_block">
+					<figure>
+						<img src="img/clay.png" alt="Глина для укладки волос «American crew»" width="220" height="165">
+						<figcaption>Глина для укладки волос<br>«American crew»</figcaption>
+					</figure>
+					<span class="good_cost">500 руб.</span>
+					<a class="good_buy" href="#">Купить</a>
+				</article>
+				<article class="good_block">
+					<figure>
+						<img src="img/gel.png" alt="Гель для волос «AMERICAN CREW»" width="220" height="165">
+						<figcaption>Гель для волос<br>«AMERICAN CREW»</figcaption>
+					</figure>
+					<span class="good_cost">300 руб.</span>
+					<a class="good_buy" href="#">Купить</a>
+				</article>
+				<article class="good_block">
+					<figure>
+						<img src="img/shave.png" alt="Набор для бритья «Baxter of California»" width="220" height="165">
+						<figcaption>Набор для бритья<br>«Baxter of California»</figcaption>
+					</figure>
+					<span class="good_cost">3 900 руб.</span>
+					<a class="good_buy" href="#">Купить</a>
+				</article>
+				<!-- Перелистываем страницы -->
+				<div class="paginator">
+					<a href="#1">1</a>
+					<a class="active" href="#2">2</a>
+					<a href="#3">3</a>
+					<a href="#4">4</a>
+				</div>
 			</div>
 		
 		</div>
