@@ -1,6 +1,7 @@
 # Учебный проект «Барбершоп»
 
 * Студент: [Александр Задорин](https://up.htmlacademy.ru/htmlcss/15/user/204505).
+* Наставник: [Сергей Попов](https://htmlacademy.ru/profile/id42761).
 
 ---
 
