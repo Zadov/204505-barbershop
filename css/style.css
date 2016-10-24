@@ -32,7 +32,7 @@
 
 
 
-.item_img_big {
+.item_img_big img{
 	display: block;
 	margin-bottom: 10px;
 	box-shadow: 0 0 10px 1px rgba(111,111,111,0.4);

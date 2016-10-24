@@ -43,25 +43,39 @@
 			</ul>
 		</nav>
 		<!-- Блок товара -->
-		<article class="item_block">
+		<div class="item_block">
 			<!-- Блок картинок товара -->
-			<!-- Стоит ли тут использовать тэг section вместо div? -->
 			<div class="item_images">
-				<img class="item_img_big" src="img/baxter.png" alt="«Baxter of California»" width="460" height="498">
-				<img class="item_img_small" src="img/baxter2.png" alt="«Baxter of California»" width="140" height="149">
-				<img class="item_img_small" src="img/baxter3.png" alt="«Baxter of California»" width="140" height="149">
-				<img class="item_img_small" src="img/baxter.png" alt="«Baxter of California»" width="140" height="149">
+				<div class="item_img_big">
+					<img src="img/baxter.png" alt="«Baxter of California»" width="460" height="498">
+				</div>
+				<div class="item_img_small">
+					<a href="#">
+						<img src="img/baxter2.png" alt="«Baxter of California»" width="140" height="149">
+					</a>
+				</div>
+				<div class="item_img_small">
+					<a href="#">
+						<img src="img/baxter3.png" alt="«Baxter of California»" width="140" height="149">
+					</a>
+				</div>
+				<div class="item_img_small">
+					<a href="#">
+						<img src="img/baxter.png" alt="«Baxter of California»" width="140" height="149">
+					</a>
+				</div>
 			</div>
 			<!-- Блок описания товара -->
-			<!-- Аналогичноый вопрос насчет section -->
-			<div class="item_descr">
-				<span class="item_descr_stock">есть в наличии</span>
-				<span class="item_descr_vendor_code">Артикул: dexter-ae</span>
+			<div class="item_description">
+				<span class="item_description_stock">есть в наличии</span>
+				<span class="item_description_vendor_code">Артикул: dexter-ae</span>
 				<p>Travel Kit – необходимый аксессуар во время любого путешествия. В аккуратной кожаной сумке находится все, что нужно для бритья и ухода за кожей во время рабочей поездки или отдыха: средство для умывания, увлажняющий крем, крем для бритья, крем после бритья, шампунь. Набор также может стать отличным подарком.</p>
-				<span class="good_cost">2 900 РУБ.</span>
-				<a href="" class="good_buy">Купить</a>
-				<h2 class="item_descr_title">В набор входят:</h2>
-				<ul class="item_descr_consist">
+				<div class="good_buy_block">
+					<span class="good_cost">2 900 РУБ.</span>
+					<a href="" class="good_buy">Купить</a>
+				</div>
+				<h2 class="item_description_title">В набор входят:</h2>
+				<ul class="item_description_consist">
 					<li>Средство для умывания (50 мл)</li>
 					<li>Увлажняющий крем (50 мл)</li>
 					<li>Крем для бритья (50 мл)</li>
@@ -69,7 +83,7 @@
 					<li>Удобная кожаная косметичка</li>
 				</ul>
 			</div>
-		</article>
+		</div>
 	</main>
 
 	<!-- Подвал сайта -->
