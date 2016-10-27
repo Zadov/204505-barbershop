@@ -1,4 +1,11 @@
-/*Добавил чуть-чуть CSS - не удержался*/
+body {
+	margin: 0;
+	padding: 0;
+	font-family: 'PT Sans Narrow', Helvetica, sans-serif;
+	font-size: 14px;
+	font-weight: normal;
+	color: #000;
+}
 
 .container {
 	margin: 0 auto;
