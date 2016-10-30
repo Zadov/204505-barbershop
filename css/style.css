@@ -4,7 +4,10 @@ body {
 	font-family: 'PT Sans Narrow', Helvetica, sans-serif;
 	font-size: 14px;
 	font-weight: normal;
-	color: #000;
+	color: #fff;
+	background-color: #000;
+	background-image: url(../img/bg.jpg);
+	background-repeat: no-repeat;
 }
 
 .container {
@@ -14,7 +17,7 @@ body {
 
 .main_header {
 	color: #fff;
-	background-color: #000;
+	padding: ;
 }
 .main_navigaition ul {
 	margin: 0;
