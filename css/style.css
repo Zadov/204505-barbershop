@@ -9,15 +9,28 @@ body {
 	background-image: url(../img/bg.jpg);
 	background-repeat: no-repeat;
 }
+.clearfix::after {
+  content: "";
+  display: table;
+  clear: both;
+}
 
 .container {
-	margin: 0 auto;
 	width: 940px;
+	margin: 0 auto;
+	padding: 0 10px;
 }
 
 .main_header {
 	color: #fff;
-	padding: ;
+	margin-bottom: 60px;
+	text-transform: uppercase;
+	font-weight: bold;
+}
+.main_navigaition {
+	float: left;
+	width: 780px;
+	min-height: 70px;
 }
 .main_navigaition ul {
 	margin: 0;
@@ -37,6 +50,65 @@ body {
 .main_navigaition a:hover {
 	border-bottom: solid #fff 4px;
 }
+.user_block {
+	float: right;
+	width: 140px;
+	min-height: 70px;
+}
+.index_logo {
+	width: 368px;
+	min-height: 204px;
+	margin: 0 auto 25px;
+}
+.features {
+	margin-bottom: 80px;
+}
+.features_item {
+	float: left;
+	width: 300px;
+	min-height: 175px;
+	margin-right: 20px;
+}
+.features_item:last-child {
+	margin-right: 0;
+}
+.index_content {
+	margin-bottom: 35px;
+	padding: 50px 80px;
+}
+.index_content_left {
+	float: left;
+	width: 380px;
+	min-height: 330px;
+}
+.index_content_right {
+	float: right;
+	width: 300px;
+	min-height: 330px;
+}
+.main_footer {
+	margin-top: 65px;
+	padding-top: 60px;
+	padding-bottom: 40px;
+}
+.footer_contacts {
+	float: left;
+	width: 320px;
+	min-height: 90px;
+}
+.footer_social {
+	float: left;
+	width: 180px;
+	min-height: 90px;
+}
+.footer_copyright {
+	float: right;
+	width: 180px;
+	min-height: 90px;
+}
+
+/*Прайс*/
+
 
 
 
