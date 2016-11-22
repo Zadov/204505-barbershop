@@ -2,8 +2,10 @@
 <html lang="ru">
 <head>
 	<meta charset="utf-8">
+	<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=PT+Sans+Narrow:400,700&amp;subset=latin,cyrillic">
+	<link rel="stylesheet" href="css/normalize.css">
 	<link rel="stylesheet" href="css/style.css">
-	<title>HTML Academy: Барбершоп</title>
+	<title>Барбершоп</title>
 </head>
 <body>
 
@@ -11,7 +13,7 @@
 
 	<header class="main_header">
 		<div class="container clearfix">
-			<nav class="main_navigaition">
+			<nav class="main_navigation">
 				<ul>
 					<li><a href="#">Информация</a></li>
 					<li><a href="#">Новости</a></li>
@@ -55,7 +57,7 @@
 			<!-- Новости -->
 			<div class="index_content_left">
 				<h2 class="index_content_title">Новости</h2>
-				<ul>
+				<ul class="news_preview">
 					<li>
 						<p>Нам наконец завезли Ягермайстер! Теперь вы можете пропустить стаканчик во время стрижки</p>
 						<time datetime="2016-01-11">11 января</time>
@@ -65,8 +67,8 @@
 						<time datetime="2016-01-18">18 января</time>
 					</li>
 				</ul>
+				<a href="#" class="btn">Все новости</a>
 			</div>
-			<a href="#" class="btn">Все новости</a>
 
 			<!-- Фотогалерея -->
 			<div class="index_content_right">
@@ -75,7 +77,7 @@
 					<figure class="gallery_content">
 						<img src="img/photo-1.jpg" alt="Photo_1" width="286" height="164">
 					</figure>
-					<button class="btn gallery_prev" type="button">Назад</button>
+					<button class="btn gallery_prev" type="button" disabled>Назад</button>
 					<button class="btn gallery_next" type="button">Вперед</button>
 				</div>
 			</div>
@@ -118,6 +120,7 @@
 
 		</div>
 	</main>
+	
 	<!-- Подвал сайта -->
 
 	<footer class="main_footer">
