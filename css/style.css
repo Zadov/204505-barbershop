@@ -514,6 +514,200 @@ body {
 	box-shadow: inset 0px 30px 40px -15px #000;
 }
 
+/*Форма входа*/
+
+@keyframes bounce {
+	0% {
+		transform: translateY(-2000px);
+	}
+	70% {
+		transform: translateY(30px);
+	}
+	90% {
+		transform: translateY(-10px);
+	}
+	100% {
+		transform: translateY(0);
+	}
+}
+@keyframes shake {
+	0%, 100% {
+		transform: translateX(0);
+	}
+	10%, 30%, 50%, 70%, 90% {
+		transform: translateX(-10px);
+	}
+	20%, 40%, 60%, 80% {
+		transform: translateX(10px);
+	}
+}
+.modal_content {
+	position: absolute;
+	top: 120px;
+	left: 50%;
+	display: none;
+	width: 300px;
+	margin-left: -230px;
+	padding: 50px 80px;
+	color: #000000;
+	background: #f8f3f0 url("img/pattern-white.jpg");
+	box-shadow: 0 30px 50px rgba(0, 0, 0, 0.7);
+}
+.modal_content_close {
+	position: absolute;
+	top: 0;
+	right: -34px;
+	width: 22px;
+	height: 22px;
+	font-size: 0;
+	background-color: transparent;
+	border: 0;
+	cursor: pointer;
+}
+.modal_content_close::before,
+.modal_content_close::after {
+	content: "";
+	position: absolute;
+	top: 10px;
+	left: 2px;
+	width: 19px;
+	height: 3px;
+	background-color: #d0d0d0;
+	border-radius: 1px;
+}
+.modal_content_close::before {
+	transform: rotate(45deg);
+}
+.modal_content_close::after {
+	transform: rotate(-45deg);
+}
+.modal_content h2 {
+	margin: 0;
+	margin-bottom: 20px;
+	font-size: 30px;
+	line-height: 42px;
+}
+.modal_content p {
+	margin: 0;
+	margin-bottom: 14px;
+}
+.modal_content .login_form {
+	margin-top: 30px;
+	margin-bottom: 10px;
+}
+.login_form input[type="text"],
+.login_form input[type="password"] {
+	width: 241px;
+	margin: 0;
+	margin-bottom: 10px;
+	padding: 10px 15px;
+	padding-right: 40px;
+	font-weight: 700;
+	font-size: 14px;
+	line-height: 24px;
+	font-family: "PT Sans Narrow", "Helvetica", sans-serif;
+	color: #000000;
+	text-transform: uppercase;
+	background-color: #f9f6f3;
+	border: 2px solid #000000;
+}
+.login_form input:focus {
+	border-color: #663d15;
+}
+.login_form input.icon_user {
+	background-image: url("../img/sprite.png");
+	background-repeat: no-repeat;
+	background-position: 100% -504px;
+}
+.login_form input.icon_password {
+	background-image: url("../img/sprite.png");
+	background-repeat: no-repeat;
+	background-position: 100% -45px;
+}
+.login_form .restore {
+	float: right;
+	color: #000000;
+}
+.login_form .btn {
+	width: 100%;
+	margin-top: 15px;
+}
+.login_checkbox input[type="checkbox"] {
+	display: none;
+}
+.login_checkbox {
+	position: relative;
+	padding-left: 30px;
+	cursor: pointer;
+}
+.login_checkbox:hover {
+	color: #663d15;
+}
+.login_checkbox input[type="checkbox"] + .checkbox_indicator {
+	position: absolute;
+	top: -3px;
+	left: 0;
+	width: 17px;
+	height: 17px;
+	border: 2px solid #000000;
+}
+.login_checkbox input[type="checkbox"]:checked + .checkbox_indicator::before,
+.login_checkbox input[type="checkbox"]:checked + .checkbox_indicator::after {
+	content: "";
+	position: absolute;
+	top: 8px;
+	left: 1px;
+	width: 15px;
+	height: 2px;
+	background-color: #000000;
+}
+.login_checkbox input[type="checkbox"]:checked + .checkbox_indicator::before {
+	transform: rotate(45deg);
+}
+.login_checkbox input[type="checkbox"]:checked + .checkbox_indicator::after {
+	transform: rotate(-45deg);
+}
+
+/*окно карты*/
+
+.modal_content_map {
+	position: fixed;
+	top: 50%;
+	left: 50%;
+	z-index: 20;
+	display: none;
+	width: 766px;
+	height: 561px;
+	margin-top: -280px;
+	margin-left: -390px;
+	background: #e9e5dc url("../img/map.png");
+	border: 7px solid white;
+	box-shadow: 0 30px 50px rgba(0, 0, 0, 0.7);
+}
+.modal_overlay {
+	position: fixed;
+	top: 0;
+	left: 0;
+	z-index: 10;
+	display: none;
+	width: 100%;
+	height: 100%;
+	background: rgba(0, 0, 0, 0.5);
+}
+.modal_overlay_add {
+	display: block;
+}
+
+/*показываем модальное окно*/
+
+.modal_content_show {
+	display: block;
+	animation: bounce 0.6s;
+}
+.modal_error {
+	animation: shake 0.6s;
+}
+
 /*.item_img_big img{
 	display: block;
 	margin-bottom: 10px;
